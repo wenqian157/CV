@@ -1,0 +1,198 @@
+[INFO] Loaded cv/europass.latex from cv/europass.latex
+[INFO] [makePDF] Temp dir:
+  /private/var/folders/d9/wvxpyhk93dl0p4m_t6tprm3m0000gn/T/tex2pdf.-d99e88abb40170f3
+[INFO] [makePDF] Command line:
+  tectonic "--outdir" "/private/var/folders/d9/wvxpyhk93dl0p4m_t6tprm3m0000gn/T/tex2pdf.-d99e88abb40170f3" "-"
+[INFO] [makePDF] Relevant environment variables:
+  ("TMPDIR","/var/folders/d9/wvxpyhk93dl0p4m_t6tprm3m0000gn/T/")
+  ("SHELL","/bin/zsh")
+  ("HOME","/Users/yang")
+  ("PATH","/opt/miniconda3/envs/icp/bin:/opt/miniconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands")
+  ("PWD","/Users/yang/GitHub/CV")
+[INFO] [makePDF] Source:
+  % !TEX encoding = UTF-8
+  % !TEX program = pdflatex
+  % !TEX spellcheck = en_GB
+  
+  \documentclass[english,a4paper]{europasscv}
+  \usepackage[english]{babel}
+  \newcommand*{\link}[2][]{\href{#2}{#1}}
+  
+  \ecvname{Mario Bianchi}
+  \ecvaddress{Via dei Rossi, 123, Roma (RM), Italy - 00000}
+  \ecvmobile{+39 320 1234567}
+  \ecvemail{mario@bianchi.it}
+  \ecvhomepage{https://www.mariobianchi.it/}
+  \ecvgithubpage{github.com/mbianchi}
+  \ecvgitlabpage{gitlab.com/mbianchi}
+  \ecvlinkedinpage{www.linkedin.com/in/mariobianchi}
+  \ecvorcid[label, link]{0000-0000-0000-0000}
+  
+  % \ecvgender{Female}
+  \ecvdateofbirth{Jan 1, 1980}
+  \ecvnationality{Italian}
+  
+  \ecvpicture[width=3.8cm]{pictures/foto}
+  
+  % \date{}
+  
+  \begin{document}
+    \begin{europasscv}
+  
+  % BEGIN COVER LETTER =============
+  
+  %     \thispagestyle{empty}
+  %     \eclpersonalinfo
+  %
+  %     \ecladdressee{Contact person}{Name of organization}{Address of organization}{City}
+  %
+  %     \eclcitydatesubject{City}{\today}{Subject of this cover letter}
+  %
+  %     \eclopeningsalutation{Dear Sir}
+  %     \eclmaincontent
+  %     {Opening salutation.\bigskip}
+  %
+  %     {This is the main content.}
+  %
+  %     {Closing salutation.}
+  %
+  %     \eclclosingsalutation{Yours sincerely}
+  %
+  %     \eclsignature
+  % %     \eclsignature[signature.jpg]
+  % %     \eclsignature[signature.jpg][Dr. Katie Smith (custom signature)]
+  %
+  %     \pagebreak
+  %     \setcounter{page}{1}
+  
+  
+  % BEGIN CV =============
+  
+    \ecvpersonalinfo
+  
+    %\ecvbigitem{Job applied for}{European project manager}
+  
+    \ecvsection{Work experience}
+  
+      \ecvtitle{Sep 2018 – now}{Coffee manager}
+    \ecvitem{}{University of Road}
+    \ecvitem{}{\textit{I manage coffee cups.}}
+    
+      \ecvtitle{Nov 2017 – Feb 2018}{Coffee consumer}
+    \ecvitem{}{University of Road}
+    \ecvitem{}{\textit{I drink coffee cups.}}
+    \ecvitem{}{\textit{The projects aims to consume all coffee of the
+  world}}
+    
+    \ecvsection{Education and training}
+  
+      \ecvtitle{2019 – now}{BSc in Computer Science}
+    \ecvitem{}{\link[University of
+  Road]{https://www.universityofroad.edu}}
+    \ecvitem{}{}
+      
+  
+    %----------------------------------------------------------------------------------------
+    
+    \ecvsection{Personal skills}
+  
+    \ecvmothertongue{Italian}
+        \ecvlanguageheader
+            \ecvlanguage{English}{C1}{C1}{C1}{C1}{C1}
+                \ecvlanguagecertificate{First, TOELF, IELTS infos}
+                \ecvlanguagefooter
+      
+    \ecvblueitem{Communication skills}{
+    \begin{ecvitemize}
+          \item I coached students on team working and technical skills
+        \end{ecvitemize}
+    }
+    
+    \ecvblueitem{Organisational / managerial skills}{
+    \begin{ecvitemize}
+          \item during my Ph.D.~I managed teams of homeless people
+        \end{ecvitemize}
+    }
+  
+    \ecvdigitalcompetence{\ecvProficient}{\ecvProficient}{\ecvProficient}{\ecvProficient}{\ecvProficient}
+    
+    \ecvblueitem{Computer skills}{
+    \begin{ecvitemize}
+          \item \textbf{Development}: Currently I’m using
+  \textbf{Brainfuck}, \textbf{Javascript} for backends, and
+  \textbf{Pipposhell} for scripting/batches. Sometimes \textbf{HTML} as
+  programming language.
+      
+        \end{ecvitemize}
+    }
+    
+    %\ecvblueitem{Other skills}{}
+  
+    %----------------------------------------------------------------------------------------
+    
+    \ecvsection{Certifications and Licenses}
+  
+    \ecvtitle{Driving licence}{European Driving License: B}
+  
+      \ecvtitle{2019}{Warrior}
+    \ecvitem{}{Coursera}
+    \ecvitem{}{Certificate available at
+  https://coursera.org/verify/ABC123}
+      \ecvtitle{2017}{First English Assessment}
+    \ecvitem{}{British Council - University of Cambridge}
+    \ecvitem{}{}
+    
+    %----------------------------------------------------------------------------------------
+    
+    \ecvsection{Additional information}
+    
+    \ecvblueitem{Projects}
+  
+      \ecvtitle{2018 – now}{\link[Conquer The World]{}}
+    \ecvitem{}{University of Road}
+    
+    
+      \ecvtitle{2014 – now}{\link[Conquer The
+  UK]{https://www.conquertheuk.com}}
+    \ecvitem{}{University of Road}
+    
+    
+    
+    \ecvblueitem{Voluntary}
+  
+      \ecvtitle{2016}{Road fair 2016}
+    \ecvitem{}{University of Road - Rome, Italy}
+    \ecvitem{}{Homeless Volunteer in University of Road}
+    
+    \ecvblueitem{Thesis}
+  
+      \ecvtitle{2017}{\link[Homelessness and
+  Universities]{https://www.mariorossi.it/mrossi/thesis.pdf}}
+    \ecvitem{}{Supervisor: Professor Donald Trump}
+    \ecvitem{}{The thesis describes some techniques I designed and
+  implemented to be a homeless}
+      
+    \ecvblueitem{Publications}
+    
+      \ecvtitle{2022}{\link[Homelessness and
+  Universities]{https://doi.org/12.3456/s123456789}}
+    \ecvitem{}{M. Rossi}
+    \ecvitem{}{Houses 2022 ACM}
+    
+    \bigskip
+    In compliance with the art. 13 GDPR 679/16 and Italian legislative decree no. 196 dated 30/06/2003, I hereby authorize the recipient of this document to use and process my personal details for the purpose of recruiting and selecting staff.
+    
+    \end{europasscv}
+  
+  \end{document}
+error: europasscv.cls:290: Package fontspec Error: The font "TeX Gyre Heros" cannot be found.
+
+For immediate help type H <return>
+error: halted on potentially-recoverable error as specified
+[INFO] [makePDF] tectonic output
+  note: reading from standard input; outputs will appear under the base name "texput"
+  note: Running TeX ...
+Error producing PDF.
+note: reading from standard input; outputs will appear under the base name "texput"
+note: Running TeX ...
+
