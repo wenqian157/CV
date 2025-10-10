@@ -39,49 +39,55 @@ education:
   where: Southwest Jiaotong University, China
   whereLink: https://en.swjtu.edu.cn/index.jsp
 
-work:
-- period: Mar 2021 -- now
+research:
+- period: 2021 -- now
   title: Scientific Assistant & Lecturer
   company: Digital Building Technologies, ETH Zurich
   duty: 
-  - -Extended Reality development in Architecture research and teaching
-  - -Lead teaching of Advanced Computational Design Course and Design++ workshop
+  - Extended Reality development in Architecture research and teaching
 
-- period: Oct 2023 -- Jul 2025
+- period: 2023 -- 2025
   title: Scientific Assistant 
   company: Concrete Structures and Bridge Design, ETH Zurich
-  duty: -Teaching applications in construction and engineering
+  duty: Teaching applications in construction and engineering
 
-- period: Nov 2019 -- Dec 2020
+- period: 2019 -- 2020
   title: Intern
   company: Block Research Group, ETH Zurich
-  duty: -Software development for structure design
+  duty: Software development for structure design
 
-- period: Aug 2010 -- Aug 2017
+practice:
+- period: 2010 -- 2017
   title: Architect 
   company: LAB Architecture Studio, China & Australia
   duty: 
-  - -Architectural designing
-  - -Project managing
-  - -External coordinating
+  - Architectural designing
+  - Project managing
+  - External coordinating
 
-
-skills:
-- title: Architecture Design and Fabrication
-  txt:
-  - -In-place robotic fabrication with timber
-  - -Large scale 3D printing with concrete and polymer
-
-- title: Software Developing
-  txt:
-  - -XR Application on HoloLens, Android & IOS, WebGL 
-  - -Grasshopper and Rhino Plugins
-
-- title: Machine Learning and Deep Learning
-  txt:
-  - -Image processing, Object recognition
-  - -Generative design
-
+teachings:
+- year: 2021 -- 2025
+  title: Advanced Computational Design Course, ETH
+  detail: Master selective coourse, Digital Building Technologies, ETH
+- year: 2025
+  title: Architecture in Large Quantities
+  detail: Master studio course, Retsin Studio, ETH
+- year: 2025
+  title: Extended Reality in AEC
+  detail: Workshop, Design++, ETH
+- year: 2022 -- 2023
+  title: Mixed Reality Course
+  detail: Master selective course, Computer Vision and Geometry Lab, ETH
+- year: 2022 -- 2023
+  title: MAS Thesis
+  detail: Master thesis, Master of Advanced Studies ETH in Architecture and Digital Fabrication
+- year: 2019 -- 2020
+  title: Digital Future
+  detail: Workshop, Tongji Universitiy
+- year: 2017 -- 2018
+  title: AA summer school
+  detal: Workshop, Architectural Association School of Architecture
+ 
 
 publications:
 - year: 2025
@@ -121,9 +127,101 @@ publications:
   publisher: RILEM / Springer Nature
   url: https://doi.org/10.21809/rilemtechlett.2024.202
 
-communicationSkills:
+
+awards:
+- year: 2025
+  title: GenAIChallenge
+  detail: Second place, ETH Library
+- year: 2022
+  title: RICS China Annual Construction Project Excellence Award
+  detail: New Campus Building of JIngjiaoyuan Affiliated School, Royal Institution of Chartered Surveyors (RICS) China Summit
+- year: 2019
+  title: Bartlett School of Architecture Medal
+  detail: Silver prize, Bartlett, UCL
+- year: 2013
+  title: Bentley BIM
+  detail: Innovation in Generative Design, with LAB Architecture Studio, Year in Infrastructure conference
+- year: 2027
+  title: Award for outstanding service as student leader
+  detail: Southwest Jiaotong University
+
+grants:
+- year: 2023
+  title: ETH Innovedum funding, CHF40,000
+  detail: Student-centred Immersive Learning of Design and Verification in Structural Concrete using Augmented Reality Environments, Unit for Teaching and Learning, ETH
+- year: 2020
+  title: ETH Innovedum funding, CHF40,000
+  detail: Transdisciplinary molecular design class, Unit for Teaching and Learning, ETH
+- year: 2008 -- 2009, CNY3,000 x 2 years
+  title: Scholarship for outstanding achievement
+  detail: Southwest Jiaotong University
+- year: 2006 -- 2007, CNY3,000 x 2 years
+  title: Scholarship for Excellence in Ranking
+  details: Southwest Jiaotong University
+
+exhibitions:
+- year: 2022
+  title: Swiss Sustainability Forum
+  detail: Augmented Tower, Bern, Switzerland
+- year: 2021
+  title: Computational-Design Students Work Exhibition
+  detail: Students work in agumented reality, HIL lobby, ETH Honggerberg, Zurich, Switzerland
+- year: 2019
+  title: Concrete Choreography
+  detail: Stage set for Origen Festival, Riom, Switzerland
+- year: 2019
+  title: Hello, Robot - Design Between Human and Machine
+  detail: Up-Sticks, V&A Museum, Dundee, UK 
+- year: 2018
+  title: Barlet Autumn Show
+  detail: Soft-Core, The bartlett faculty of the built environment, London, UK
+
+projects:
+- year: 2022
+  title: New Campus Building of JIngjiaoyuan Affiliated School
+  detail: Lead designer, Middle school campus and building, Shanghai, China
+- year: 2017
+  title: Cycling Center
+  detail: Project manager, Public building, Huaian, China
+- year: 2013
+  title: Flower Expo Pavillions and Tourist Center
+  detail: Lead designer, Exhibition pavillions, Changzhou, China
+
+skills:
+- title: Robotic Fabrication
+  txt:
+  - In-place robotic fabrication with timber (e.g. Up-Sticks at V&A museum Dundee) 
+  - Large scale 3D printing with concrete and polymer (e.g. Concrete Choreography at Origen Festival, Riom)
+
+- title: Software Developing
+  txt:
+  - XR Application on HoloLens, Android & IOS, WebGL(e.g. Augmented Reality for Structural Inspection of Historic Monuments) 
+  - Networked system development for real-time cross platform data communication(e.g. Real-time immersive design with GenAI) 
+  - Grasshopper and Rhino Plugins(Ee.g. MolaGH, mesh subdivision plugin for grasshopper)
+  - Website(e.g. Structure Concrete course website)
+
+- title: Machine Learning and Deep Learning
+  txt:
+  - Image processing, Object recognition (e.g. Reconstruction LiDAR data with Iterative Closest Point) 
+  - Generative design
+
+- title: Architecture Design
+  txt:
+  - Architectural concept deisgn, project mmanagement, external coordinating
+  - Modeling with Rhino, Maya, Blender, Zbrush, Houdini
+  - Structure optimization using Ameba, Millipede
+  - Image & vidio editing with AI rendering, Adobe Suite
 
 
-organizationSkills:
+referees:
+- name: Professor Benjamin Dillenburger, Institute of Technology in Architecture, ETH Zurich
+  e: dillenburger@arch.ethz.ch
+  t: +41 44 633 07 42
+- name: Professor Walter Kaufmann, Institute for structural Engineering and Construction, ETH Zurich
+  e: kaufmann@ibk.baug.ethz.ch
+  t: +41 44 633 75 29
+- name: Professor Philippe block, Institute of Technology in Architecture, ETH Zurich
+  e: block@arch.ethz.ch
+  t: +41 44 633 68 44
 
 ---
