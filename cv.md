@@ -1,116 +1,125 @@
 ---
-firstName: Mario
-familyName: Bianchi
-address1: Via dei Rossi, 123
-address2: Roma (RM), Italy - 00000
-mobile: +39 320 1234567
-email: mario@bianchi.it
-website: https://www.mariobianchi.it/
-picturePath: pictures/foto
-birthDate: Jan 1, 1980
-birthPlace: Rome (RM), Italy
-citizenship: Italian
-nationality: Italian
+firstName: Wenqian
+familyName: Yang
+address1: Zwinglistrasse 43
+address2: Zurich, Switzerland, 8004
+mobile: +41(0)765414929
+email: wenqian.v.yang@gmail.com
+website: https://wenqian157.github.io/
+picturePath: pictures/wen
+birthDate: Jun 5, 1986
+birthPlace: Sichuan, China
+citizenship: Chinese
+nationality: Chinese
 languages:
-  mother: "Italian"
+  mother: "Mandarin"
   others:
     - name: English
       listening: C1
       reading: C1
       writing: C1
       speaking: C1
-      overall: C1
-      other: "First, TOELF, IELTS infos"
-hamRadio: Callsign AAAAAA
-pgp: "pgp-key"
-gitlab: mbianchi
-github: mbianchi
-linkedin: mariobianchi
-orcid: "0000-0000-0000-0000"
-drivingLicense: "European Driving License: B"
+github: wenqian157
+linkedin: wenqian-yang
+orcid: "0009-0007-7423-7819"
 
 education:
-- period: 2019 -- now
-  title: BSc in Computer Science
-  where: University of Road
-  whereLink: https://www.universityofroad.edu
+- period: 2018 -- 2019
+  title: Master of Advanced Study in Architecture and Digital Fabrication
+  where: ETH, Switzerland
+  whereLink: https://masdfab.arch.ethz.ch/
 
+- period: 2017 -- 2018
+  title: Master of Architecture(Distinction)
+  where: Bartlett School, University College London, United Kingdom
+  whereLink: https://www.ucl.ac.uk/bartlett/architecture
+
+- period: 2005 -- 2010
+  title: Bachelor of Architecture
+  where: Southwest Jiaotong University, China
+  whereLink: https://en.swjtu.edu.cn/index.jsp
 
 work:
-- period: Sep 2018 -- now
-  title: Coffee manager
-  company: University of Road
-  duty: I manage coffee cups.
+- period: Mar 2021 -- now
+  title: Scientific Assistant & Lecturer
+  company: Digital Building Technologies, ETH Zurich
+  duty: Extended Reality development in Architecture research and teaching, lead teaching of Advanced Computational Design Course and Design++ workshop 2025
 
-- period: Nov 2017 -- Feb 2018
-  title: Coffee consumer
-  company: University of Road
-  duty: I drink coffee cups.
-  summary: The projects aims to consume all coffee of the world
+- period: Oct 2023 -- Jul 2025
+  title: Scientific Assistant
+  company: Concrete Structures and Bridge Design, ETH Zurich
+  duty: Teaching applications in construction and engineering
+
+- period: Nov 2019 -- Dec 2020
+  title: Intern
+  company: Block Research Group, ETH Zurich
+  duty: Software development for structure design
+
+- period: Aug 2010 -- Aug 2017
+  title: Architect 
+  company: LAB Architecure Studio, China & Australia
+  duty: Architectrual designning, project managing, external coordinating
 
 
 skills:
-- name: Development
+- name: Architecture Design and Fabrication
   txt:
-  - Currently I'm using **Brainfuck**, **Javascript** for backends, and **Pipposhell** for scripting/batches.
-    Sometimes **HTML** as programming language.
+  - In-place robotic fabrication with timber
+  - Large scale 3D printing with concrete and polymer
 
-projects:
-- period: 2018 -- now
-  title: Conquer The World
-  where: University of Road
-  duty: |
-    I'm the system architect and lead developer for ``Conquer The World''.
-  summary: |
-    Conquer The World aims to conquer the world
+- name: Software Developing
+  txt:
+  - XR Application on HoloLens, Android & IOS, WebGL 
+  - Grasshopper and Rhino Plugins
 
-- period: 2014 -- now
-  title: Conquer The UK
-  link: https://www.conquertheuk.com
-  where: University of Road
-  summary: |
-    Conquer The UK summary
-
-
-certificates:
-- year: 2019
-  title: Warrior
-  by: Coursera
-  other: Certificate available at https://coursera.org/verify/ABC123
-
-- year: 2017
-  title: "First English Assessment"
-  by: British Council - University of Cambridge
-
-
-voluntary:
-- period: 2016
-  title: Road fair 2016
-  subtitle: University of Road
-  where: Rome, Italy
-  other: Homeless Volunteer in University of Road
-
-
-thesis:
-- year: 2017
-  title: "Homelessness and Universities"
-  link: https://www.mariorossi.it/mrossi/thesis.pdf
-  supervisor: Professor Donald Trump
-  summary: The thesis describes some techniques I designed and implemented to be a homeless
+- name: Machine Learning and Deep Learning
+  txt:
+  - Image processing, Object recognition, Generative design
 
 
 publications:
-- year: 2022
-  title: Homelessness and Universities
-  authors: M. Rossi
-  venue: Houses 2022
-  publisher: ACM
-  url: https://doi.org/12.3456/s123456789
+- year: 2025
+  title: "Mola-Advancing Generative Design in Architectural Pedagogy: An open-source library and plugins for rule-based mesh subdivision for computational design education"
+  authors: W. Yang, B. Dillenburger
+  venue: Tokyo, Japan(The University of Tokyo)
+  publisher: CAADRIA
+  url: https://doi.org/10.52842/conf.caadria.2025.1.449
 
+- year: 2025
+  title: Mixed-Reality Apartment Layout Design Using Scaled 3D-Printed Furniture Models as Interactive Markers
+  authors: W. Yang, A. Savov, B. Dillenburger
+  venue: Hong kong(The University of Hong Kong)
+  publisher: CAAD Futures 
+  url: https://doi.org/10.25442/hku.29365724
+
+- year: Abstract accepted; full paper under review
+  title: "3D Textbook and Beyond: Interactive Learning Platforms for Architectural and Structural Education"
+  authors: W. Yang
+  venue: Taiwan(Ming Chiao Tung University)
+  publisher: CAADRIA
+
+- year: Submitted for review
+  title: "Augmented Reality for Structural Inspection of Historic Monuments: The Case of Lausanne Cathedral"
+  authors: R. Maia Avelino, W. Yang, et al.
+  venue: Online (Open Access Journal)
+  publisher: International Journal of Architectural Heritage
+
+- year: 2025
+  title: "The Lausanne Cathedral seen through XR: Structure and Materials"
+  authors: R. Maia Avelino, Y. Patankar, W. Yang, et al.
+  venue: Lausanne cathedral
+  publisher: SAHC
+
+- year: 2025
+  title: Heritage ++, a Spatial Computing approach to Heritage Conservation
+  authors: Y. Patankar, C. Tennenini, W. Yang, R.J. Flatt, et al.
+  venue: Online (Open Access Journal)
+  publisher: RILEM / Springer Nature
+  url: https://doi.org/10.21809/rilemtechlett.2024.202
 
 communicationSkills:
-- I coached students on team working and technical skills
+
 
 organizationSkills:
-- during my Ph.D. I managed teams of homeless people
+
 ---
