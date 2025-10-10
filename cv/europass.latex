@@ -9,6 +9,7 @@
 \makeatletter
 \let\ecvtitle@orig\ecvtitle
 \renewcommand{\ecvtitle}[2]{\ecvtitle@orig{ {\small #1} }{ {\small #2} }}
+\setlength{\ecvitemsep}{0.2em}
 \makeatother
 
 \newcommand*{\link}[2][]{\href{#2}{#1}}
