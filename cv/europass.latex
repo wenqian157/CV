@@ -1,34 +1,72 @@
 % !TEX encoding = UTF-8
 % !TEX program = pdflatex
 % !TEX spellcheck = en_GB
-
 \documentclass[english,a4paper]{europasscv}
 \usepackage[english]{babel}
 \usepackage{comment}
-
-\makeatletter
-\let\ecvtitle@orig\ecvtitle
-\renewcommand{\ecvtitle}[2]{\ecvtitle@orig{ {\small #1} }{ {\small #2} }}
-\setlength{\ecvitemsep}{0.2em}
-\makeatother
-
 \newcommand*{\link}[2][]{\href{#2}{#1}}
 
+
+% CHANGE FONT SIZE
+\makeatletter
+\let\ecvtitle@orig\ecvtitle
+\renewcommand{\ecvtitle}[2]{
+  %\vspace{-0.9em}
+  \ecvtitle@orig{ {\small #1} }{ {\small #2} }
+  }
+\begin{comment}
+\let\ecvitem@orig\ecvitem
+\renewcommand{\ecvitem}[2]{%
+  \vspace{-0.2em}% tighten before items
+  \ecvitem@orig{#1}{#2}%
+}
+\end{comment}
+\makeatother
+
+
+% TIGHTEN THE GAPS
+\usepackage{etoolbox}
+% tighten BEFORE each title and item (no recursion, optional args preserved)
+\pretocmd{\ecvtitle}{\vspace{-0.9em}}{}{}
+\pretocmd{\ecvitem}{\vspace{-0.2em}}{}{}
+
+
+% HIDE LOGO AND FOOTER
+\usepackage{tikz,eso-pic}
+\newcommand{\HideEuropassLogo}{%
+  \AddToShipoutPictureFG{ % ← no star = all pages
+    \AtPageUpperLeft{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \fill[white] (5mm,-5mm) rectangle (65mm,-32mm);
+      \end{tikzpicture}%
+    }%
+  }%
+}
+\AtBeginDocument{\HideEuropassLogo}
+\newcommand{\HideFooterStrip}{%
+  \AddToShipoutPictureFG{ % unstarred = all pages
+    \AtPageLowerLeft{%
+      \begin{tikzpicture}[remember picture,overlay]
+        % Cover full page width; adjust height (e.g., 12–20mm) as needed
+        \fill[white] (0mm,0mm) rectangle (\paperwidth,18mm);
+      \end{tikzpicture}%
+    }%
+  }%
+}
+\AtBeginDocument{\HideFooterStrip}
+
+% PERSONAL INFO
 \ecvname{$firstName$ $familyName$}
 $if(public-cv)$
-%\ecvdateofbirth{$birthDate$}
+\ecvdateofbirth{$birthDate$}
 $else$
 \ecvaddress{$address1$, $address2$}
 \ecvmobile{$mobile$}
 \ecvemail{$email$}
 \ecvhomepage{$website$}
 \ecvgithubpage{github.com/$github$}
-
-\ecvlinkedinpage{www.linkedin.com/in/$linkedin$}
 \ecvorcid[label, link]{$orcid$}
 
-% \ecvgender{Female}
-% \ecvdateofbirth{$birthDate$}
 % \ecvnationality{$nationality$}
 
 % \ecvpicture[width=3.8cm]{$picturePath$}
@@ -39,32 +77,6 @@ $endif$
 \begin{document}
   \begin{europasscv}
 
-% BEGIN COVER LETTER =============
-
-%     \thispagestyle{empty}
-%     \eclpersonalinfo
-%
-%     \ecladdressee{Contact person}{Name of organization}{Address of organization}{City}
-%
-%     \eclcitydatesubject{City}{\today}{Subject of this cover letter}
-%
-%     \eclopeningsalutation{Dear Sir}
-%     \eclmaincontent
-%     {Opening salutation.\bigskip}
-%
-%     {This is the main content.}
-%
-%     {Closing salutation.}
-%
-%     \eclclosingsalutation{Yours sincerely}
-%
-%     \eclsignature
-% %     \eclsignature[signature.jpg]
-% %     \eclsignature[signature.jpg][Dr. Katie Smith (custom signature)]
-%
-%     \pagebreak
-%     \setcounter{page}{1}
-
 
 % BEGIN CV =============
 
@@ -72,31 +84,87 @@ $endif$
 
   %\ecvbigitem{Job applied for}{European project manager}
 
-  \ecvsection{Work experience}
-
-  $for(work)$
-  \ecvtitle{$work.period$}{$work.title$}
-  \ecvitem{}{$work.company$}
-  $if(work.duty)$
-    $for(work.duty)$
-      \ecvitem{}{\textit{$work.duty$}}
-     $endfor$ 
-  $endif$
-  $if(work.summary)$\ecvitem{}{\textit{$work.summary$}}$endif$
-  $endfor$
-
   \ecvsection{Education and training}
-
+  \vspace{0.5em}
   $for(education)$
   \ecvtitle{$education.period$}{$education.title$}
   \ecvitem{}{\link[$education.where$]{$education.whereLink$}}
-  \ecvitem{}{$education.score$$education.other$}
   $endfor$  
-
-  %----------------------------------------------------------------------------------------
   \vspace{1em}
-  \ecvsection{Skills}
 
+  \ecvsection{Work experience}
+  \ecvblueitem{}{\large{Research}}
+  $for(research)$
+  \ecvtitle{$research.period$}{$research.title$}
+  \ecvitem{}{$research.company$}
+  $if(research.duty)$
+    $for(research.duty)$
+      \ecvitem{}{\textit{$research.duty$}}
+     $endfor$ 
+  $endif$
+  $endfor$
+
+  \ecvblueitem{}{\large{Practice}}
+  $for(practice)$
+  \ecvtitle{$practice.period$}{$practice.title$}
+  \ecvitem{}{$practice.company$}
+  $if(practice.duty)$
+    $for(practice.duty)$
+      \ecvitem{}{\textit{$practice.duty$}}
+     $endfor$ 
+  $endif$
+  $endfor$
+
+  \ecvblueitem{}{\large{Teaching}}
+  $for(teaching)$
+  \ecvtitle{$teaching.year$}{$teaching.title$}
+  $for(teaching.detail)$
+    \ecvitem{}{$teaching.detail$}
+    $endfor$ 
+  $endfor$
+
+\ecvsection{Publications}
+\vspace{0.5em}
+  
+  $for(publications)$
+  \ecvtitle{$publications.year$}{\link[$publications.title$]{$publications.url$}}
+  \ecvitem{}{$publications.authors$}
+  \ecvitem{}{$publications.venue$ $publications.publisher$}
+  $if(publications.url)$
+  \ecvitem{}{$publications.url$}
+  $endif$
+  $endfor$
+
+\ecvsection{Exhibitions}
+\vspace{0.5em}
+  $for(exhibitions)$
+  \ecvtitle{$exhibitions.year$}{$exhibitions.title$}
+  \ecvitem{}{$exhibitions.detail$}
+  $endfor$
+
+\ecvsection{Selected Projects}
+\vspace{0.5em}
+  $for(projects)$
+  \ecvtitle{$projects.year$}{$projects.title$}
+  \ecvitem{}{$projects.detail$}
+  $endfor$
+
+\ecvsection{Awards}
+\vspace{0.5em}
+  $for(awards)$
+  \ecvtitle{$awards.year$}{$awards.title$}
+  \ecvitem{}{$awards.detail$}
+  $endfor$
+
+\ecvsection{Grants}
+\vspace{0.5em}
+  $for(grants)$
+  \ecvtitle{$grants.year$}{$grants.title$}
+  \ecvitem{}{$grants.detail$}
+  $endfor$
+
+  \ecvsection{Skills}
+  \vspace{0.5em}
 \begin{comment}
   \ecvblueitem{Work skills}{
   \begin{ecvitemize}
@@ -117,17 +185,8 @@ $endif$
     $endfor$
 
   $endfor$
-
-  %----------------------------------------------------------------------------------------
  
-  \ecvsection{Publications}
   
-  $for(publications)$
-  \ecvtitle{$publications.year$}{\link[$publications.title$]{$publications.url$}}
-  \ecvitem{}{$publications.authors$}
-  \ecvitem{}{$publications.venue$ $publications.publisher$}
-  \ecvitem{}{$publications.url$}
-  $endfor$
   
 
   \end{europasscv}

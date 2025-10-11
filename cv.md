@@ -41,7 +41,7 @@ education:
 
 research:
 - period: 2021 -- now
-  title: Scientific Assistant & Lecturer
+  title: Scientific Assistant
   company: Digital Building Technologies, ETH Zurich
   duty: 
   - Extended Reality development in Architecture research and teaching
@@ -65,7 +65,7 @@ practice:
   - Project managing
   - External coordinating
 
-teachings:
+teaching:
 - year: 2021 -- 2025
   title: Advanced Computational Design Course, ETH
   detail: Master selective coourse, Digital Building Technologies, ETH
@@ -86,7 +86,7 @@ teachings:
   detail: Workshop, Tongji Universitiy
 - year: 2017 -- 2018
   title: AA summer school
-  detal: Workshop, Architectural Association School of Architecture
+  detail: Workshop, Architectural Association School of Architecture
  
 
 publications:
@@ -152,12 +152,12 @@ grants:
 - year: 2020
   title: ETH Innovedum funding, CHF40,000
   detail: Transdisciplinary molecular design class, Unit for Teaching and Learning, ETH
-- year: 2008 -- 2009, CNY3,000 x 2 years
-  title: Scholarship for outstanding achievement
+- year: 2008 -- 2009
+  title: Scholarship for outstanding achievement, CNY3,000 x 2 years
   detail: Southwest Jiaotong University
-- year: 2006 -- 2007, CNY3,000 x 2 years
-  title: Scholarship for Excellence in Ranking
-  details: Southwest Jiaotong University
+- year: 2006 -- 2007
+  title: Scholarship for Excellence in Ranking, CNY3,000 x 2 years
+  detail: Southwest Jiaotong University
 
 exhibitions:
 - year: 2022
