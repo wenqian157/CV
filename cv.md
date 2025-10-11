@@ -160,6 +160,12 @@ grants:
   detail: Southwest Jiaotong University
 
 exhibitions:
+- year: 2024
+  title: ETH Industry Day
+  detail: Interactive Learning Platforms for Architectural and Structural Education, Zurich Convention Center, Zurich, Switzerland
+- year: 2023
+  title: ETH Industry Day
+  detail: Mixed-Reality Apartment Layout Design for 7 Day house project, ETH Honggerberg, Zurich, Switzerland
 - year: 2022
   title: Swiss Sustainability Forum
   detail: Augmented Tower, Bern, Switzerland
