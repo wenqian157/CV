@@ -114,6 +114,7 @@ publications:
   title: "Augmented Reality for Structural Inspection of Historic Monuments: The Case of Lausanne Cathedral"
   authors: R. Maia Avelino, W. Yang, et al.
   publisher: International Journal of Architectural Heritage
+  url: https://doi.org/10.1080/15583058.2025.2578318
 
 - year: 2025
   title: "The Lausanne Cathedral seen through XR: Structure and Materials"
