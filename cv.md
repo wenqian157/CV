@@ -147,6 +147,9 @@ awards:
   detail: Southwest Jiaotong University
 
 grants:
+- year: 2025
+  title: ETH Innovedum funding, CHF40,000
+  detail: AI-Enhanced Visualization in Architectural Education, Unit for Teaching and Learning, ETH
 - year: 2023
   title: ETH Innovedum funding, CHF40,000
   detail: Student-centred Immersive Learning of Design and Verification in Structural Concrete using Augmented Reality Environments, Unit for Teaching and Learning, ETH
